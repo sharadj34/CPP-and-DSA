@@ -1,9 +1,8 @@
 Q. How to solve a problem?
-- Understand
-- Given Values
-- Approach
-- Program
+- Understand the problem
+- Check given Values
+- Think for the approach
+- Code down the approach
 
 -> A diagramatic representation of an approach to solve a problem is known as Flowchart.
 
-  
