@@ -6,4 +6,4 @@ Q. How to solve a problem?
 
 -> A diagramatic representation of an approach to solve a problem is known as Flowchart.
 
- 
+  
