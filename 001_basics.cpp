@@ -188,3 +188,55 @@ int main()
     cout << s[len-1] << endl;
     return 0;
 }
+
+// FOR LOOP
+#include <iostream>
+using namespace std;
+int main()
+{
+    int i;
+    // simple loop
+    for (i = 1; i<=5; i++)
+    {
+        cout << "Sharad" << " " << i << endl;
+    }
+
+    // reverse loop
+    for (i = 5; i>=1; i--)
+    {
+        cout << "Sharad" << " " << i << endl;
+    }
+
+    return 0;
+}
+
+
+// WHILE LOOP
+#include <iostream>
+using namespace std;
+int main()
+{
+    int i = 1;
+    while (i<=5)
+    {
+        cout << "Sharad" << " " << i << endl;
+        i+=1;
+    }
+    return 0;
+}
+
+
+// DO-WHILE LOOP
+#include <iostream>
+using namespace std;
+int main()
+{
+    int i = 1;
+    do
+    {
+        cout << "Sharad" << " " << i << endl;
+        i+=1;
+    }
+    while (i<=5);
+    return 0;
+} 
