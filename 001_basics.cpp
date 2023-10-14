@@ -1,6 +1,4 @@
-/*
 // PRINT HELLO WORLD
-
 #include <iostream>
 using namespace std;
 int main()
@@ -11,7 +9,6 @@ int main()
 
 
 // DATA TYPES
-
 #include <iostream>
 using namespace std;
 int main()
@@ -42,7 +39,6 @@ int main()
 
 
 // sizeof FUNCTION
-
 #include <iostream>
 using namespace std;
 int main()
@@ -158,5 +154,37 @@ int main()
     return 0;
 }
 
-*/
 
+// ARRAYS BASICS
+#include <iostream>
+using namespace std;
+int main()
+{
+    // 1D array
+    int arr[5];
+    cin >> arr[0] >> arr[1] >> arr[2] >> arr[3] >> arr[4];
+    cout<<arr[3];
+    return 0;
+
+    // 2D array
+    int arr[3][5];
+    arr[1][3] = 15;
+    cout << arr[1][3];
+
+    return 0;
+}
+
+
+// STRING BASICS
+#include <iostream>
+using namespace std;
+int main()
+{
+    string s = "Sharad";
+
+    cout << s[3] << endl;;
+
+    int len = s.size();
+    cout << s[len-1] << endl;
+    return 0;
+}
