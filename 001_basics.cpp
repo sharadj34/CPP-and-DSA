@@ -1,4 +1,5 @@
-*** print hello world ***
+/*
+// PRINT HELLO WORLD
 
 #include <iostream>
 using namespace std;
@@ -9,7 +10,7 @@ int main()
 }
 
 
-*** data types ***
+// DATA TYPES
 
 #include <iostream>
 using namespace std;
@@ -40,7 +41,7 @@ int main()
 }
 
 
-*** sizeof function ***
+// sizeof FUNCTION
 
 #include <iostream>
 using namespace std;
@@ -55,7 +56,7 @@ int main()
 }
 
 
-*** getline function for string ***
+// getline FUNCTION FOR STRING
 #include <iostream>
 using namespace std;
 int main()
@@ -67,7 +68,7 @@ int main()
 }
 
 
-*** #define preprocessor ***
+// #define preprocessor 
 #include <iostream>
 using namespace std;
 #define length 10
@@ -82,7 +83,7 @@ int main()
 }
 
 
-*** Using const keyword ***
+// USING const KEYWORD
 #include <iostream>
 using namespace std;
 int main()
@@ -97,7 +98,7 @@ int main()
 }
 
 
-*** if-else-if ***
+// if-else-if 
 #include <iostream>
 using namespace std;
 int main()
@@ -120,7 +121,7 @@ int main()
 }
 
 
-*** Switch Case ***
+// SWITCH CASE
 #include <iostream>
 using namespace std;
 int main()
@@ -156,4 +157,6 @@ int main()
     }
     return 0;
 }
+
+*/
 
