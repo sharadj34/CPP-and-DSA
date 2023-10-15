@@ -5,4 +5,6 @@ Hello! In this repo I'll be adding all the C++ and DSA questions solved during m
 
 -> 001_basics.cpp
 
+-> 002_functions.cpp
+
 -> Pattern_programs
