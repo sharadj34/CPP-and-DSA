@@ -146,7 +146,7 @@ int main()
 {
     int n;
     cin >> n;
-    print1(n);
+    /* print1(n);
     cout<<endl;
     print2(n);
     cout<<endl;
@@ -157,6 +157,10 @@ int main()
     print5(n);
     cout<<endl;
     print6(n);
+    cout<<endl; */
+
+    print7(n);
     cout<<endl;
+
     return 0;
 }

@@ -18,4 +18,4 @@ for (int i = 0; i < N; i++)
     }
 }
 
-Time Complexity : O()
+Time Complexity : O(N^2)
