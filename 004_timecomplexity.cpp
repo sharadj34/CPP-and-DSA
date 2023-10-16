@@ -1,4 +1,4 @@
-//Rate at which the time taken increases with respect to the input size is known as time complexity.
+// Rate at which the time taken increases with respect to the input size is known as time complexity.
 
 // Every piece of code takes time in terms of Big-O Notaion.
 
