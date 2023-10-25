@@ -138,6 +138,47 @@ PATTERN 7
 */
 void print7(int n)
 {
+    for (int i = 0; i<n; i++)
+    {
+        //sapce
+        for(int j=0 ; j<n-i-1 ; j++)
+        cout << " ";
+        //star
+        for(int j=0 ; j<2*i+1 ; j++)
+        cout << "*";
+        //space
+        for(int j=0 ; j<n-i-1 ; j++)
+        cout << " ";
+        cout<<endl;
+    }
+
+}
+
+
+/* 
+PATTERN 8
+***********
+ *********
+  *******
+   *****
+    ***
+     *
+*/
+void print8(int n)
+{
+    for (int i = 0; i<n; i++)
+    {
+        //sapce
+        for(int j=0 ; j<i ; j++)
+        cout << " ";
+        //star
+        for(int j=0 ; j<(2*n)-(2*i+1) ; j++)
+        cout << "*";
+        //space
+        for(int j=0 ; j<i ; j++)
+        cout << " ";
+        cout<<endl;
+    }
 
 }
 
@@ -146,7 +187,7 @@ int main()
 {
     int n;
     cin >> n;
-    /* print1(n);
+    print1(n);
     cout<<endl;
     print2(n);
     cout<<endl;
@@ -157,9 +198,10 @@ int main()
     print5(n);
     cout<<endl;
     print6(n);
-    cout<<endl; */
-
+    cout<<endl; 
     print7(n);
+    cout<<endl;
+    print8(n);
     cout<<endl;
 
     return 0;
