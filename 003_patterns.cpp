@@ -197,7 +197,7 @@ PATTERN 9
     ***
      *     
 */
-void print9(int n)
+void print9()
 {
     // Combine pattern 7 and 8
 }
