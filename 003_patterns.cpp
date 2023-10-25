@@ -179,6 +179,68 @@ void print8(int n)
         cout << " ";
         cout<<endl;
     }
+}
+
+
+/* 
+PATTERN 9
+     *
+    ***
+   *****
+  *******
+ *********
+***********
+***********
+ *********
+  *******
+   *****
+    ***
+     *     
+*/
+void print9(int n)
+{
+    // Combine pattern 7 and 8
+}
+
+
+/* 
+PATTERN 10
+*
+* *
+* * *
+* * * *
+* * * * *
+* * * *
+* * *
+* *
+*
+*/
+void print10(int n)
+{
+    for (int i = 0; i < n-1; i++)
+    {
+        for (int j = 0; j<=i; j++)
+        {
+            cout << "*" << " ";
+        }
+        cout << endl;        
+    }
+        for (int i = 0; i<n; i++)
+    {
+        for (int j = n; j>i; j--)
+        {
+            cout << "*" << " ";
+        }
+        cout << endl;        
+    }
+}
+
+
+/*
+PATTERN 11
+*/
+void print11(int n)
+{
 
 }
 
@@ -187,22 +249,38 @@ int main()
 {
     int n;
     cin >> n;
+    // Pattern 1
     print1(n);
     cout<<endl;
+    // Pattern 2
     print2(n);
     cout<<endl;
+    // Pattern 3
     print3(n);
     cout<<endl;
+    // Pattern 4
     print4(n);
     cout<<endl;
+    // Pattern 5
     print5(n);
     cout<<endl;
+    // Pattern 6
     print6(n);
     cout<<endl; 
+    // Pattern 7
     print7(n);
     cout<<endl;
+    // Pattern 8
     print8(n);
     cout<<endl;
-
+    // Pattern 9
+    print7(n);
+    print8(n);
+    // Pattern 10
+    print10(n);
+    cout<<endl;
+    // Pattern 11
+    print11(n);
+    cout<<endl;
     return 0;
 }
