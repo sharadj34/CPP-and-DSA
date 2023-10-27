@@ -49,11 +49,63 @@ void explainVector()
     vector<int>::iterator i = v.end(); // it points to a memory location that is right after the last element of the vector.
 
     cout << v.back() << endl;
+
+    int t;
+    for(auto t = v.begin() ; t!=v.end() ; t++)
+    {
+        cout << *(t) << " ";
+    }
+
+    for(auto it : v)
+    {
+        cout << it << " ";
+    }
+
+    v.erase(v.begin() + 1); // delete single element
+
+    v.erase(v.begin() + 2, v.begin() + 4); // delete multiple elements
+
+    // Insert-function
+    vector<int>v(2, 100); // {100, 100}
+    v. insert (v.begin(), 300); // {300, 100, 100};
+    v. insert (v.begin() + 1, 2, 10); // {300, 10, 10, 100, 100}
+    
+    vector<int> copy(2, 50); // {50, 50}
+    v. insert (v.begin(), copy.begin(), copy.end ()); // {50, 50, 300, 10, 10, 100, 100}
+    
+    // {10, 20}
+    cout << v. size(); // 2
+    
+    //{10, 20}
+    v. pop_back(); // {10}
+
+    // vl - {10, 20)
+    // v2 -> (30, 40)
+    v1.swap(v2); // v1 -> {30, 40), v2 -> {10, 20)
+    
+    v.clear(); // erases the entire vector
+    cout << v.empty();
 }
+
+
+void explainList() 
+{
+    list<int> ls;
+    ls.push_back(2); // (2)
+    ls.emplace_back(4); // {2, 4)
+
+    ls.push_front(5); // (5, 2, 4)
+
+    ls.emplace_front(); // {2, 4}
+    // rest functions same as vector
+    // begin, end, rbegin, rend, clear, insert, size, swap
+}
+
 
 int main()
 {
     explainPair();
     explainVector();
+    explainList();
     return 0;
 }
