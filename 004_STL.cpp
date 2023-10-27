@@ -102,10 +102,53 @@ void explainList()
 }
 
 
+void explainDeque()
+{
+    deque<int>dq;
+    dq.push_back(1); // {1)
+    dq.emplace_back(2); // {1, 2}
+    dq.push_front(4); // (4, 1, 2)
+    dq.emplace_front(3); // {3, 4, 1, 2)
+    
+    dq.pop_back(); // {3, 4, 1)
+    dq.pop_front(); // (4, 1)
+    
+    dq.back();
+    
+    dq.front();
+    //rest functions same as vector
+    // begin, end, rbegin, rend, clear, insert, size, swap
+}
+
+
+void explainStack()
+{
+    stack<int> st;
+
+    st.push(11); // {11}
+    st.push(12); // {12,11}
+    st.push(13); // {13,12,11}
+    st.push(10); // {10,13,12,11}
+    st.emplace(30); // {30,10,13,12,11}
+
+    cout << st.top(); // prints 30
+    // No indexing concept is used in stacks
+
+    st.pop(); // st looks like {10,13,12,11}
+
+    cout << st.top(); // 10
+    cout << st.size(); // 4
+    cout << st.empty(); // checks if it is empty or not. returns true or false
+
+    stack<int> st1,st2;
+    st1.swap(st2);
+}
+
 int main()
 {
     explainPair();
     explainVector();
     explainList();
+    explainDeque();
     return 0;
 }
