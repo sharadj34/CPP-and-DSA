@@ -13,3 +13,5 @@ Hello! In this repo I'll be adding all the C++ and DSA questions solved during m
 
 -> 005_timecomplexity.cpp
 
+--> 006_basic_maths.cpp
+
