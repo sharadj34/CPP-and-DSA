@@ -250,16 +250,49 @@ void explainMultiSet()
     // rest all functions are same as set
 }
 
+
+void explainUSet()
+{
+   // everything unique but does not store in a sorted order
+
+   unordered_set<int> st;
+
+   /* lower_bound and upper_bound functions does not work, rest all functions are same as above, it does not store in any particular order it has a better complexity than set in most cases, excpet some when collision happens */  
+
+   /* In almost all the cases the time complexity of Unordered set ig O(1), it's very very much rare the time complexity would be O(N) in worst case */
+}
+
+
+void explainMap()
+{
+    /* Map is a container which stores everything with respect to {key, value}. The key can be of any datatypes. */
+    map<int, int> mpp;
+
+    map<int, pair<int, int>> mpp1;
+
+    map<pair<int, int>, int> mpp2;
+
+    mpp[1] = 2;
+    mpp.emplace(3,1);
+    mpp.insert({2,4});
+    mpp[{2,3}] = 10;
+    
+    for (auto it : mpp)
+    {
+        cout<< it.first << " " << it.second <<endl;
+    }
+
+    cout << mpp[1];
+    cout << mpp[5];
+
+    auto it = mpp.find(3);
+    cout << *(it).second;
+
+    auto it = mpp.find(5);
+}
+
+
 int main()
 {
-    explainPair();
-    explainVector();
-    explainList();
-    explainDeque();
-    explainStack();
-    explainQueue();
-    explainPQ();
-    explainSet();
-    explainMultiSet();
     return 0;
 }
