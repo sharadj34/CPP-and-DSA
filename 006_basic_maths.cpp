@@ -71,12 +71,32 @@ void P4(long n)
       cout << ans;
 }
 
+
+// PALINDROME NUMBER
+void P5(int n)
+{
+    // Write your code here
+    int rev=0, d;
+    int t = n;
+    while(t!=0)
+    {
+        d = t%10;
+        rev = rev*10+d;
+        t=t/10;
+    }
+    if(rev == n)
+    cout << "true";
+    else
+    cout << "false";
+}
+
 int main()
 {
-    int num = 45796;
+    int num = 43285;
     ext(num);
     P1(num);
     P2(num);
-    P4(12);
+    P4(12); 
+    P5(num);
     return 0;
 }
