@@ -90,6 +90,26 @@ void P5(int n)
     cout << "false";
 }
 
+
+// ARMSTRONG NUMBER
+void P6(int n){
+	//Write your code here
+	int s = 0,d;
+	int t = n;
+	int count = (int) (log10(n) + 1);
+	while(t!=0)
+	{
+		d = t%10;
+		s = s + pow(d,count);
+		t = t/10;
+	}
+	if(s == n)
+	cout << "true";
+	else
+	cout << "false";
+}
+
+
 int main()
 {
     int num = 43285;
@@ -98,5 +118,6 @@ int main()
     P2(num);
     P4(12); 
     P5(num);
+    P6(num); 
     return 0;
 }
