@@ -110,14 +110,40 @@ void P6(int n){
 }
 
 
+// PRIME OR NOT
+void P7(int n)
+{
+	if(n<=1)
+	cout << "false";
+	for(int i=2; i<sqrt(n);i++)
+	{
+		if(n%i==0)
+		cout << "false";
+	}
+    cout << "true";
+}
+
+
+// GREATEST COMMON FACTOR (GCD)
+int P8(int n, int m){
+    // Write your code here.
+    if(m == 0)
+    return n;
+    return P8(m, n%m);
+}
+
+
 int main()
 {
     int num = 43285;
+    int n1 = 20, n2 = 15;
     ext(num);
     P1(num);
     P2(num);
     P4(12); 
     P5(num);
     P6(num); 
+    P7(num);
+    cout << P8(n1,n2);
     return 0;
 }
