@@ -1,3 +1,5 @@
+// DECIMAL TO BINARY CONVERSION
+
 #include <bits/stdc++.h>
 using namespace std;
 int main()
