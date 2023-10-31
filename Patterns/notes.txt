@@ -1,0 +1,5 @@
+Patterns use nested loops
+For the outer loop, count the number of rows
+For the inner loop, focus on the columns and somehow connect them to the rows
+Whatever we are printing, print them inside the inner for loop
+Observe symmetry [optional - only applicable to certain patterns]
