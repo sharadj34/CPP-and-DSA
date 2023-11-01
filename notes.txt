@@ -1,8 +1,0 @@
-Q. How to solve a problem?
-- Understand the problem
-- Check given Values
-- Think for the approach
-- Code down the approach
-
-#include <bits/stdc++.h> -> This is used to include all the libraires in once, we don't need to include various libraries seperately. It takes some time but it is negligible as compared to the time taken by the various functions of the program.
-
