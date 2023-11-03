@@ -1,0 +1,53 @@
+Definition: Rate at which the time taken increases with respect to the input size is known as time complexity.
+
+Every piece of code takes time in terms of Big-O Notaion.
+
+The 3 rules to write time complexity are: 
+1. Compute time complexity in terms of worst case scenario.
+2. Avoid constants
+3. Avoid lower values/degrees
+
+
+// QUESTION 1
+for(int i = 0 ; i < N ; i++)
+{
+    a = a + ra();
+}
+for(j = 0 ; j < M ; j++)
+{
+    b = b + ra();
+}
+
+Here, ra() is of O(1) time.
+
+Time Complexity : O(N+M)
+
+
+
+// QUESTION 2
+for (int i = 0; i < N; i++)
+{
+    for (int j = 0; j < N; j++)
+    {
+        a = a + j;
+    }
+}
+for(k = 0 ; k < N ; k++)
+{
+    b = b + k;
+}
+
+Time Complexity : O(N^2)
+
+
+
+// QUESTION 3
+for (int i = 0; i < N; i++)
+{
+    for (int j = N; j>0; j--)
+    {
+        a = a+i+j;
+    }
+}
+
+Time Complexity : O(N^2)
