@@ -1,7 +1,7 @@
-class Solution {
-public:
+#include <bits/stdc++.h>
+using namespace std;
 
-long long int binarysearch(int n)
+long long int integersol(int n)
 {
     int s = 0;
     int e = n;
@@ -27,7 +27,33 @@ long long int binarysearch(int n)
     }
     return ans;
 }
-    int mySqrt(int x) {
-        return binarysearch(x);
+
+double morePrecision(int n, int precision, int tempsol)
+{
+    double factor = 1;
+    double ans = tempsol;
+
+    for(int i=0; i<precision; i++)
+    {
+        factor = factor/10;
+
+        for(double j=ans ; j*j<n ; j = j+factor)
+        {
+            ans = j;
+        }
     }
-};
+    return ans;
+}
+
+    int main() 
+    {
+        int n;
+        cout << "Enter a number: " << endl;
+        cin >> n;
+
+        int tempsol = integersol(n);
+
+        cout << "Answer is : " << morePrecision(n , 3, tempsol) << endl;
+
+        return 0;
+    }
