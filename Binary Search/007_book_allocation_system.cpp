@@ -25,8 +25,6 @@ bool ispossible(int arr[], int n, int m, int mid)
     }
     return true;
 }
-
-
 int main()
 {
     int arr[5] = {2,8,8,4,5};
