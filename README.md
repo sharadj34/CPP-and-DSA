@@ -4,9 +4,15 @@ Hello everyone! In this repository I'll be adding all the C++ and DSA questions 
 SEQUENCE:
 
 -> 001 - Basics
+
 -> 002 - Binary and Decimal Number System
+
 -> 003 - Patterns
+
 -> 004 - Arrays
+
 -> 005 - Functions
+
 -> 006 - Time & Space Complexity
+
 -> 007 - Binary Search
