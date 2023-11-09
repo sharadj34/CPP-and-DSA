@@ -1,3 +1,9 @@
+/*
+PROBLEM: Total number of occurence
+
+LINK: https://www.codingninjas.com/studio/problems/occurrence-of-x-in-a-sorted-array_630456
+*/
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -69,17 +75,16 @@ int main()
     int num[8] = {1,2,3,3,3,3,3,5};
 
     int FO = FirstOccurence(num , 8 , 3);
-
     int LO = LastOccurence(num , 8 ,3);
 
-    cout << "First index of 3 is : " << FO << endl;
-    cout << "Last index of 3 is : " << LO << endl ;
-}
+    int TO = (LO - FO) + 1 ;
+    cout << "Total Occurences of 3 is : " << TO << endl;
 
+    return 0;
+}
 
 
 /*
 OUTPUT:
-First index of 3 is : 2
-Last index of 3 is : 6
+Total Occurences of 3 is : 5
 */

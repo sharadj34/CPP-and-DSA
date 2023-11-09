@@ -1,3 +1,8 @@
+/*
+PROBLEM : Find First and Last Position of Element in Sorted Array
+
+LINK: https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
+*/
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -69,16 +74,17 @@ int main()
     int num[8] = {1,2,3,3,3,3,3,5};
 
     int FO = FirstOccurence(num , 8 , 3);
+
     int LO = LastOccurence(num , 8 ,3);
 
-    int TO = (LO - FO) + 1 ;
-    cout << "Total Occurences of 3 is : " << TO << endl;
-
-    return 0;
+    cout << "First index of 3 is : " << FO << endl;
+    cout << "Last index of 3 is : " << LO << endl ;
 }
+
 
 
 /*
 OUTPUT:
-Total Occurences of 3 is : 5
+First index of 3 is : 2
+Last index of 3 is : 6
 */
