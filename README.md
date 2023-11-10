@@ -16,3 +16,5 @@ SEQUENCE:
 -> 006 - Time & Space Complexity
 
 -> 007 - Binary Search
+
+-> 008 - Selection Sot
