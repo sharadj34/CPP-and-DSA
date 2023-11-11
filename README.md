@@ -17,4 +17,4 @@ SEQUENCE:
 
 -> 007 - Binary Search
 
--> 008 - Selection Sot
+-> 008 - Sorting Techniques
