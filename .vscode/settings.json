@@ -4,6 +4,7 @@
         "iostream": "cpp",
         "bitset": "cpp",
         "algorithm": "cpp",
-        "cmath": "cpp"
+        "cmath": "cpp",
+        "regex": "cpp"
     }
 }
