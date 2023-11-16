@@ -20,3 +20,5 @@ SEQUENCE:
 -> 008 - Sorting Techniques
 
 -> 009 - STL
+
+-> 010 - Character arrays and strings
