@@ -40,7 +40,25 @@ int main()
     (*r)++;
     cout << "Value of num is: " << num << endl; // 6
 
+    // Copying a pointer
+    int *s = r;
+    cout << s << " -- " << r << endl;
+    cout << *s << " -- " << *r << endl;
 
+    // IMPORTANT CONCEPT -- Pointer Arithmetic
+
+    int b = 3;
+    int *t = &b;
+    cout << "1. Value of b: " << *t << endl;
+    cout << "1. Address of b: " << t << endl;
+
+    *t = *t + 1;
+    cout << "2. Value of b: " << *t << endl;
+    cout << "2. Address of b: " << t << endl;
+
+    t = t + 1;
+    cout << "3. Value of b: " << *t << endl;
+    cout << "3. Address of b: " << t << endl;
 
     return 0;
 }
