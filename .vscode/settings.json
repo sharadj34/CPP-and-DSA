@@ -5,6 +5,10 @@
         "bitset": "cpp",
         "algorithm": "cpp",
         "cmath": "cpp",
-        "regex": "cpp"
+        "regex": "cpp",
+        "array": "cpp",
+        "initializer_list": "cpp",
+        "utility": "cpp",
+        "valarray": "cpp"
     }
 }
