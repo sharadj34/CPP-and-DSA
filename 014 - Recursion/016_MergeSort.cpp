@@ -52,6 +52,7 @@ void merge(int *arr, int s, int e)
     }
 }
 
+
 void mergeSort(int *arr, int s, int e)
 {
     if(s>=e)
@@ -70,6 +71,7 @@ void mergeSort(int *arr, int s, int e)
 
 }
 
+
 int main()
 {
     int arr[5] = {2,5,1,6,9};
@@ -83,6 +85,6 @@ int main()
         cout << arr[i] << " ";
     }
     cout << "]";
-    
+
     return 0;
 }
