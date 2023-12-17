@@ -23,7 +23,6 @@ void solve(string s, string output, int index, vector<string> &ans, string mappi
 		output.pop_back();
 	}
 }
-
 vector<string> combinations(string s)
 {
 	vector<string> ans;

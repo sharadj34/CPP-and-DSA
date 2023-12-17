@@ -19,7 +19,6 @@ void solve(string str,int index,vector<string>&ans){
         swap(str[index],str[j]);
     }
 }
-
 vector<string> generatePermutations(string &str)
 {
     // write your code here
