@@ -20,10 +20,37 @@ using namespace std;
 class Hero{
 
     private:
-    // char name[100];
     int health;
+
     public:
+    char *name;
     char level;
+    static int timetocomplete;
+
+    // default constructor
+    Hero()
+    {
+        cout << "Constructor called" << endl;
+        name = new char[100];
+    }
+    
+    // parameterized constructor
+    Hero(int health,int level)
+    {
+        this->health = health;
+        this->level = level;
+    }
+
+    // COPY CONSTRUCTOR {deep copy}
+    Hero(Hero& temp)
+    {
+        char *ch = new char[strlen(temp.name) + 1];
+        strcpy(ch, temp.name);
+        this->name = ch;
+
+        this->health = temp.health;
+        this->level = temp.level;
+    }
 
     void print()
     {
@@ -50,7 +77,21 @@ class Hero{
         level = ch;
     }
 
+    // DESTRUCTOR
+    ~Hero()
+    {
+        cout << "Destructor is called" << endl;
+    }
+
+    // STATIC FUNCTION - can only access static members
+    static int random()
+    {
+        return timetocomplete;
+    }
 };
+
+// initializing static data
+int Hero::timetocomplete = 5;
 
 int main()
 {
@@ -75,7 +116,19 @@ int main()
     cout << "Level is: " << h -> level << endl;
     cout <<"Health is: " << h -> getHealth() << endl;
 
-    
+    // COPY CONSTRUCTOR {shallow copy}
+    Hero suresh(70,'C');
+    Hero ramesh(suresh);
+
+    // COPY ASSIGNMENT OPERATOR
+    ramesh = h1;
+
+    // Dynamic Destructor
+    Hero *B = new Hero();
+    delete B;
+
+    cout << Hero::timetocomplete << endl;
+    cout << Hero::random() << endl;
 
     return 0;
 }
