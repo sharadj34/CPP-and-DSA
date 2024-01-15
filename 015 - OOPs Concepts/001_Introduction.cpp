@@ -1,5 +1,4 @@
 /*
-
 -> Object-Oriented Programming is basically a programming style that we used to follow in modern programming. It primarily revolves around classes and objects. The main aim of OOP is to bind together the data and the functions that operate on them so that no other part of the code can access this data except that function.
 
 -> Object is an entity with some characterstics (state/properties) and behaviour. It increases readability, manageability and extensibility.
