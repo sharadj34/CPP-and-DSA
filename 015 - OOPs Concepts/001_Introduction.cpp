@@ -11,7 +11,6 @@
 -> Getter/Setter: Getter is to fetch/read the data whereas in Setter we can set data based on conditions.
 
 -> Padding is the technique of adding extra bytes to a structure or class to align its data members to specific boundaries. This is done to ensure that the data members are accessed efficiently by the processor, which typically fetches data from memory in chunks of fixed sizes, such as 4 or 8 bytes.
-
 */
 
 
