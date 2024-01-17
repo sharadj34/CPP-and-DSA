@@ -3,7 +3,7 @@
 
 -> Object is an entity with some characterstics (state/properties) and behaviour. It increases readability, manageability and extensibility.
 
--> Class is a user defined data type that describes what a particular kind of object will look like.
+-> A class is a logical entity used to define a new data type. A class is a user-defined type that describes what a particular kind of object will look like. Thus, a class is a template or blueprint for an object. A class contains variables, methods, and constructors.
 
 -> Size of object == Size of properties in a class
 -> For empty class, size of object = 1 byte
