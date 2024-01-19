@@ -1,5 +1,4 @@
 /*
-
 -> Object-Oriented Programming is basically a programming style that we used to follow in modern programming. It primarily revolves around classes and objects. The main aim of OOP is to bind together the data and the functions that operate on them so that no other part of the code can access this data except that function.
 
 -> Object is an entity with some characterstics (state/properties) and behaviour. It increases readability, manageability and extensibility.
@@ -12,7 +11,6 @@
 -> Getter/Setter: Getter is to fetch/read the data whereas in Setter we can set data based on conditions.
 
 -> Padding is the technique of adding extra bytes to a structure or class to align its data members to specific boundaries. This is done to ensure that the data members are accessed efficiently by the processor, which typically fetches data from memory in chunks of fixed sizes, such as 4 or 8 bytes.
-
 */
 
 
